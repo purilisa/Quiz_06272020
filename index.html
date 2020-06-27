@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Coding Quiz</title>
+</head>
+
+<body>
+    <div class="indexpagecontainer">
+        <div class="container" id="hidecontainer">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time </p>
+            <p>limit. Keep in mind that incorrect answers will penalize your score/time </p>
+            <p>by 5 seconds!</p>
+            <!-- <a href="quiz.html" id="startquiz">Start Quiz</a> -->
+            <button type="submit" value="submit" id="startquiz" class="startquiz"> Start Quiz</button>
+        </div>
+        <div class="container2" id="quizzcontainer">
+            <h1>Coding Quiz Challenge</h1>
+            <p class="timerpane" id="timer" value="Timer">Timer: </p>
+            <div class="questions"></div>
+            <div class="answers"></div>
+
+        </div>
+
+        <div id="scoreContainer" class="scoreContainershow">
+            <h1>Coding Quiz Challenge Results</h1>
+            <form class="form-inline">
+                <div class="form-group mb-2">
+                    <label for="highScore" class="sr-only highscore">Highscore</label>
+                    <input type="text" readonly class="form-control-plaintext highscore" id="highScore">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="yourInitials" class="sr-only">Your Initials: </label>
+                    <input type="text" class="form-control-plaintext initials" id="yourInitial" placeholder="Enter your initials here" value=" ">
+                    <button type="submit" class="btn btn-primary mb-2" id="submitInitials">Submit Initials</button>
+                </div>
+            </form>
+            <div class="container">
+                <h6 class="scoretitle"> Your Score :</h6>
+                <div id="displayQuizScore">
+
+                </div>
+                <span class="initialDisplay">  </span>
+                <span class="scoreDisplay"> </span>
+                <button type="submit" class="btn btn-primary mb-2" id="deleteQuizResults">DeleteResults</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js "></script>
+
+</body>
+
+</html>
